@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Repozytorium główne" id="B123DE81-5D0C-530E-98F0-2A06CE0FB030" version="3.5">
+<createdBy>Aleksandra</createdBy>
+<createdTime>2018-05-16 18:52:06 UTC</createdTime>
+<ownerDesignName>Repozytorium główne</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B123DE81-5D0C-530E-98F0-2A06CE0FB030</designId>
+</OSDM_Design>
