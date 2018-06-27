@@ -1,0 +1,433 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3987879d-3700-459a-94a6-c28c88e5a1c5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>KALENDARZ GODZIN</ID>
+  <Name>KALENDARZ GODZIN</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7e162698-f08f-4b03-bf82-bdf028b8df1d">
+    <DataSourceViewID>Hurtownia</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="986e0cc6-2cfe-4176-9f68-7db45ae6736d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="cd59d829-a9ec-4992-a4a3-6949612dbcb3">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f2ea533-3d6b-4328-9eac-8b2627af7353">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db4fd013-dd3d-4797-85a7-aa8cc4873df3">
+            <TableID>dbo_KALENDARZ_x0020_GODZIN</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="da078084-b31c-45b6-8563-ee77ea76fba4">
+          <AttributeID>Czas Filmowy</AttributeID>
+          <Name>Czas Filmowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e6ee0ca-5572-4b62-9ccd-c9d6b42817a5">
+          <AttributeID>Id Kalendarz Film</AttributeID>
+          <Name>Id Kalendarz Film</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1afc46b4-92d3-4569-991c-66a186aa7b15">
+          <AttributeID>Id Slownika</AttributeID>
+          <Name>Id Slownika</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="da08b083-1377-4095-b0f2-cfb577c08da1">
+          <AttributeID>Id Kalendarz Ast</AttributeID>
+          <Name>Id Kalendarz Ast</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e468585-23f8-4026-a28a-f54060dc0df1">
+      <ID>Czas Filmowy</ID>
+      <Name>Czas Filmowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e49c424-a89e-47f6-a6d5-8e3dad8718f7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6aabec41-e725-474e-a3d3-0a7cd6fb9d50">
+            <TableID>dbo_KALENDARZ_x0020_GODZIN</TableID>
+            <ColumnID>Czas_x0020_filmowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c5d2b09-9e42-444c-a29d-307f4d0294ac">
+      <ID>Id Kalendarz Film</ID>
+      <Name>Id Kalendarz Film</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7c09eb7-8661-431d-a36f-4d0b81f3dd39">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46149406-b001-4a1c-a402-88e7ebd69171">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Id_x0020_kalendarz_film</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dfa13501-e064-4c17-be60-d49288a4e6ab">
+          <AttributeID>Data Filmowa</AttributeID>
+          <Name>Data Filmowa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b6f0c8c-592d-4479-9b85-2e669dca6027">
+          <AttributeID>Miesiac Filmowy</AttributeID>
+          <Name>Miesiac Filmowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="03b45d18-2652-48af-bae4-f8f03465ac24">
+          <AttributeID>Dzien Filmowy</AttributeID>
+          <Name>Dzien Filmowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3576d2b4-030e-496c-966e-e7ab32846992">
+          <AttributeID>Dzien Tygodnia Filmowy</AttributeID>
+          <Name>Dzien Tygodnia Filmowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3768edc2-2f43-4511-9b5d-f164d8e21e72">
+          <AttributeID>Rok Filmowy</AttributeID>
+          <Name>Rok Filmowy</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b667d1a4-63f0-46c4-a896-6eb90eed5afc">
+      <ID>Data Filmowa</ID>
+      <Name>Data Filmowa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bac6666c-20cf-4b92-834a-8b55420191d4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f82fb74f-15d3-4918-925a-4430d57be00c">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Data_x0020_filmowa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6805718e-743d-4cb8-8fea-c087159864d8">
+      <ID>Miesiac Filmowy</ID>
+      <Name>Miesiac Filmowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da164ff2-3d3e-4d52-b0fe-3825ea23c0e5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20d1f9bc-7dd2-4c4f-839a-34c856a42c9e">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Miesiac_x0020_filmowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d2226148-684c-4589-8dbb-9f2a4a92fcd3">
+      <ID>Dzien Filmowy</ID>
+      <Name>Dzien Filmowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa642c13-827f-4676-a342-9a5e200b2a54">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="649f8509-64d1-49dc-9633-e9dd3b1b2a3a">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Dzien_x0020_filmowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad6af238-5a13-4e69-b48e-d74ff3b5ada1">
+      <ID>Dzien Tygodnia Filmowy</ID>
+      <Name>Dzien Tygodnia Filmowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13bdf19b-6f33-4ab7-b321-0fac229f45e9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41eaca9e-3067-48fb-9aed-7d90a26d2385">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Dzien_x0020_tygodnia_x0020_filmowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="05b8c77d-05a7-4384-9983-3008a93326cc">
+      <ID>Rok Filmowy</ID>
+      <Name>Rok Filmowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43e56729-4117-40be-a340-ef6962f4cb06">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3b457d3-c2cf-49b6-a922-230d5db241dc">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_FILMOWYCH</TableID>
+            <ColumnID>Rok_x0020_filmowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db1a97de-1cef-4326-8bba-f0f7c1c57edf">
+      <ID>Id Slownika</ID>
+      <Name>Id Slownika</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a104439-2f8a-4c8d-97bd-7ecac3f30126">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1a3ff46-89a9-451d-9ea8-a7ab44fa2042">
+            <TableID>dbo_SLOWNIK_x0020_GODZIN_x0020_FIZ</TableID>
+            <ColumnID>Id_x0020_slownika</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="fa9921a7-a51c-421d-b252-d2f2230c1709">
+          <AttributeID>Godzina Zwykla</AttributeID>
+          <Name>Godzina Zwykla</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="66835c17-d8fc-46d6-af33-ae5fdeea9afe">
+          <AttributeID>Godzina Filmowa</AttributeID>
+          <Name>Godzina Filmowa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b0f431f-f18a-43c2-b80e-733aff4590dc">
+          <AttributeID>Minuta</AttributeID>
+          <Name>Minuta</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aab1a139-8803-4ebf-af5b-6ca906de0893">
+      <ID>Godzina Zwykla</ID>
+      <Name>Godzina Zwykla</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02b78f3d-bdfe-4a3b-a005-811517ca5aa7">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e13be766-d77c-490b-9661-20e2fdd56a76">
+            <TableID>dbo_SLOWNIK_x0020_GODZIN_x0020_FIZ</TableID>
+            <ColumnID>Godzina_x0020_zwykla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="af5943ef-4555-4a57-a26a-06570bbbd5ca">
+      <ID>Godzina Filmowa</ID>
+      <Name>Godzina Filmowa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6127df9f-03a5-43dc-8c56-acb0dd2437d4">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e912292e-af34-40ca-850c-7f327420a0bd">
+            <TableID>dbo_SLOWNIK_x0020_GODZIN_x0020_FIZ</TableID>
+            <ColumnID>Godzina_x0020_filmowa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad3e7752-aeae-43b6-a36e-aa4fc671c092">
+      <ID>Minuta</ID>
+      <Name>Minuta</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4dfe58f3-8cbd-4584-b452-f4ca6b2a0d0d">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0aff78b0-874c-4e02-b0a5-d55a8bbac817">
+            <TableID>dbo_SLOWNIK_x0020_GODZIN_x0020_FIZ</TableID>
+            <ColumnID>Minuta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ad2e709-df11-4af9-9379-19a81702bac1">
+      <ID>Id Kalendarz Ast</ID>
+      <Name>Id Kalendarz Ast</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34f47475-fc3f-4037-9332-46f393d04672">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19303880-e8c5-48a3-b5f3-75733163c141">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Id_x0020_kalendarz_ast</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3f5eb4c2-6522-4785-a7cb-c4fea1e574cb">
+          <AttributeID>Data Zwykla</AttributeID>
+          <Name>Data Zwykla</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="167d8fc4-50d5-4906-a58e-776b220581a2">
+          <AttributeID>Miesiac Zwykly</AttributeID>
+          <Name>Miesiac Zwykly</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c2d2f09-e50b-4134-98ff-b9561778fa14">
+          <AttributeID>Dzien Zwykly</AttributeID>
+          <Name>Dzien Zwykly</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9650d3b-acac-4405-8ae2-20673911c275">
+          <AttributeID>Dzien Tygodnia Zwykly</AttributeID>
+          <Name>Dzien Tygodnia Zwykly</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aa7f3c80-5783-409a-928b-cd85c89dbdee">
+          <AttributeID>Rok Zwykly</AttributeID>
+          <Name>Rok Zwykly</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7f9e7589-e00a-494d-94c7-22e8af5dc7b3">
+      <ID>Data Zwykla</ID>
+      <Name>Data Zwykla</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ab4a8e7-e1c0-4e98-a2d1-9518ac357cf5">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18b39eae-d301-4161-af7e-0242dc024abc">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Data_x0020_zwykla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d2fa8fe-55dc-4506-a4fe-26d501866929">
+      <ID>Miesiac Zwykly</ID>
+      <Name>Miesiac Zwykly</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="47cec327-06f0-42f7-8b8c-b32a3a2a5126">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f026209b-b395-4eed-bd2e-cc09e4d7a570">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Miesiac_x0020_zwykly</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d73f0066-7904-4651-a4e3-fcbcc8809b35">
+      <ID>Dzien Zwykly</ID>
+      <Name>Dzien Zwykly</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f74f68ac-6da8-4093-a630-e9fb19e4a75b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8650a61-a446-4bb6-97d7-a2c43ca89c4e">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Dzien_x0020_zwykly</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3e54fe5-0fe4-442e-978c-58260334bd54">
+      <ID>Dzien Tygodnia Zwykly</ID>
+      <Name>Dzien Tygodnia Zwykly</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd0ddcfe-611a-41f8-8082-345beeed6132">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67d07b4c-0772-4711-9188-0716ce5ee290">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Dzien_x0020_tygodnia_x0020_zwykly</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f718f05-4568-4778-8db0-1deca3a0c728">
+      <ID>Rok Zwykly</ID>
+      <Name>Rok Zwykly</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6253b84-f781-4ed5-ab9a-24bfe73379fd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acbcbfc0-e99b-4892-8201-933395dec5df">
+            <TableID>dbo_KALENDARZ_x0020_DAT_x0020_ASTRONOMICZNYCH</TableID>
+            <ColumnID>Rok_x0020_zwykly</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
