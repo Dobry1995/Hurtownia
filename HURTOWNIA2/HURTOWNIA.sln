@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "HURTOWNIA", "HURTOWNIA\HURTOWNIA.dtproj", "{5D745210-FB4C-48D8-BF2F-FDF4B2843A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D745210-FB4C-48D8-BF2F-FDF4B2843A9D}.Development|Default.ActiveCfg = Development
+		{5D745210-FB4C-48D8-BF2F-FDF4B2843A9D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {409BFA3B-AFF6-4E99-BD9A-C7379ABB9703}
+	EndGlobalSection
+EndGlobal
